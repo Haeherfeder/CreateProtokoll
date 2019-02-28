@@ -55,9 +55,9 @@ public class Main {
 		int freizeilen = Integer.parseInt(user_input.next());
 		writer.write("Skizze/Versuchsaufbau:"+zeilen(freizeilen+1)+"Tabelle:\n");
 		System.out.println("Tabelle\nZeilen: ");
-		int zeilen = Integer.parseInt(user_input.next());
+		int zeilen = Integer.parseInt(user_input.nextLine());
 		System.out.println("Spalten: ");
-		int spalten = Integer.parseInt(user_input.next());
+		int spalten = Integer.parseInt(user_input.nextLine());
 		for(int i=0;i<zeilen;i++) {
 			for(int i2=0;i2<spalten;i2++) {
 				System.out.println("Feld: "+i+"und"+i2);
@@ -66,6 +66,7 @@ public class Main {
 			}
 			writer.write("\n");
 		}
+		writer.write("\n");
 		System.out.println("Beobachtung: ");
 		String beobachtung = user_input.nextLine();
 		writer.write("Beobachtung: "+beobachtung+"\n\n");
